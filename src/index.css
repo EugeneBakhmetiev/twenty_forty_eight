@@ -1,0 +1,146 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+
+  position: relative;
+  background-color: lavender;
+}
+
+.mainSection {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.gameWindow {
+  height: 415px;
+  width: 415px;
+  border: 4px solid lightskyblue;
+  background-color: white;
+
+  display: grid;
+  grid-template: 100px 100px 100px 100px / 100px 100px 100px 100px;
+  gap: 5px;
+}
+
+.controlPanel {
+  width: 160px;
+  height: 160px;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.number {
+  height: 100px;
+  width: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: translate 1s ease-in-out;
+}
+
+.filledNumber {
+  border: 1px dashed blue;
+}
+
+.gameSectionBlurred {
+  opacity: 0.4;
+}
+
+.gameEndMessage {
+  height: calc(100% - 40px);
+  width: calc(100% - 40px);
+
+  background-color: transparent;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  z-index: 10;
+}
+
+.outerButtonRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerButtonRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.controlButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recentAdded {
+  border: 5px double #FFD743;
+
+  height: 90px;
+  width: 90px;
+}
+
+.n2 {
+  background-color: #EFF1DB;
+}
+
+.n4 {
+  background-color: #FFD4DB
+}
+
+.n8 {
+  background-color: #D3B5E5
+}
+
+.n16 {
+  background-color: #EEB5EB
+}
+
+.n32 {
+  background-color: #D773A2
+}
+
+.n64 {
+  background-color: #C26DBC
+}
+
+.n128 {
+  background-color: #A06AB4
+}
+
+.n256 {
+  background-color: #C8F4F9
+}
+
+.n512 {
+  background-color: #BBE7FE
+}
+
+.n1024 {
+  background-color: #07BB9C
+}
+
+.n2048 {
+  background-color: #3CACAE
+}
